@@ -10,9 +10,15 @@ import SnapKit
 
 class MainView: UIView {
     
+    private lazy var container: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        return view
+    }()
+    
     private lazy var firstLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.font = .systemFont(ofSize: 15, weight: .regular)
+        label.font = .boldSystemFont(ofSize: 40)
         label.backgroundColor = .clear
         label.text = "Title"
         label.textAlignment = .center
@@ -26,14 +32,18 @@ class MainView: UIView {
         setConstraints()
     }
     
-    func setHierarchy(){addSubview(firstLabel)}
+    func setHierarchy(){
+        addSubview(container)
+        addSubview(firstLabel)
+    }
     
     private func setConstraints(){
-         firstLabel.snp.makeConstraints{ $0
-             $0.top.equalToSuperview().offset(20)
-             $0.leading.equalToSuperview().offset(20)
-             $0.trailing.equalToSuperview().offset(-20)
-             $0.bottom.equalToSuperview().offset(20)
+        
+        container.snp.makeConstraints{make in make.edges.equalToSuperview()}
+        
+         firstLabel.snp.makeConstraints{ make in
+             make.top.equalToSuperview().offset(20)
+             make.leading.equalToSuperview().offset(20)
          }
     }
     

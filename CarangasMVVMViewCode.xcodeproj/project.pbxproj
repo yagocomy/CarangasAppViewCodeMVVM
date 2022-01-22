@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4F2E3AF3605B49DED416CB14 /* Pods_CarangasMVVMViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBB2496CC33CCF10659F161 /* Pods_CarangasMVVMViewCode.framework */; };
+		A001337E279C3C17002FA16F /* ListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001337D279C3C17002FA16F /* ListingView.swift */; };
+		A0013380279C3C27002FA16F /* ListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001337F279C3C27002FA16F /* ListingViewController.swift */; };
 		A0190FAF2783B883007EA87D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190FAE2783B883007EA87D /* AppDelegate.swift */; };
 		A0190FB12783B883007EA87D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0190FB02783B883007EA87D /* SceneDelegate.swift */; };
 		A0190FB82783B885007EA87D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0190FB72783B885007EA87D /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		1D996227EAF6EB2570B83AD6 /* Pods-CarangasMVVMViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarangasMVVMViewCode.release.xcconfig"; path = "Target Support Files/Pods-CarangasMVVMViewCode/Pods-CarangasMVVMViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		2CBB2496CC33CCF10659F161 /* Pods_CarangasMVVMViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarangasMVVMViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FE1358E3F129045A1457D3 /* Pods-CarangasMVVMViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarangasMVVMViewCode.debug.xcconfig"; path = "Target Support Files/Pods-CarangasMVVMViewCode/Pods-CarangasMVVMViewCode.debug.xcconfig"; sourceTree = "<group>"; };
+		A001337D279C3C17002FA16F /* ListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingView.swift; sourceTree = "<group>"; };
+		A001337F279C3C27002FA16F /* ListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewController.swift; sourceTree = "<group>"; };
 		A0190FAB2783B883007EA87D /* CarangasMVVMViewCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarangasMVVMViewCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0190FAE2783B883007EA87D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0190FB02783B883007EA87D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A001337C279C3C05002FA16F /* Listing */ = {
+			isa = PBXGroup;
+			children = (
+				A001337D279C3C17002FA16F /* ListingView.swift */,
+				A001337F279C3C27002FA16F /* ListingViewController.swift */,
+			);
+			path = Listing;
+			sourceTree = "<group>";
+		};
 		A0190FA22783B883007EA87D = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +78,7 @@
 		A0190FAD2783B883007EA87D /* CarangasMVVMViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				A001337C279C3C05002FA16F /* Listing */,
 				A0190FCF2783BEC5007EA87D /* Main */,
 				A0190FC22783B967007EA87D /* LaunchScreen */,
 				A0190FB72783B885007EA87D /* Assets.xcassets */,
@@ -234,9 +248,11 @@
 				A0190FC62783B9E8007EA87D /* LaunchScreenView.swift in Sources */,
 				A0190FD42783BEE5007EA87D /* MainView.swift in Sources */,
 				A0190FAF2783B883007EA87D /* AppDelegate.swift in Sources */,
+				A001337E279C3C17002FA16F /* ListingView.swift in Sources */,
 				A0190FC42783B9D1007EA87D /* LaunchScreenViewController.swift in Sources */,
 				A0190FB12783B883007EA87D /* SceneDelegate.swift in Sources */,
 				A0190FD12783BED3007EA87D /* MainViewController.swift in Sources */,
+				A0013380279C3C27002FA16F /* ListingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

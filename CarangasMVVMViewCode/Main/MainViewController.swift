@@ -28,4 +28,13 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         self.view = self.posLaunchView
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in // ESPERO 3s PARA O SPLASH SUMIR
+            let vc = ListiningViewController()
+            vc.modalPresentationStyle = .fullScreen // CONFIGURO O VIEW CONTROLLER PARA TELA CHEIA
+            vc.modalTransitionStyle = .crossDissolve
+            self?.present(vc, animated: true, completion: nil) // APRESENTO O VC
+        }
+    }
 }
